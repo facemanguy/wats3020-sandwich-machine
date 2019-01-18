@@ -46,28 +46,28 @@ let prices = {
 
 // TODO: Convert order information from Strings to Arrays.
 
-let meatArray = null;
-let toppingArray = null;
-let condimentArray = null;
+let meatArray = meat.split(',');
+let toppingArray = toppings.split(',');
+let condimentArray = condiments.split(',');
 
 // TODO: Calculate cost for meat, toppings, and condiments.
 // This requires you to determine the length of each Array you just made
 // and multiply out the costs. You will need to refer to the attributes of the
 // `prices` object in order to calculate these costs.
 
-let meatCost = null;
-let toppingCost = null;
-let condimentCost = null;
+let meatCost = meatArray.length * prices.meat;
+let toppingCost = toppingArray.length * prices.topping;
+let condimentCost = condimentArray.length * prices.condiment;
 
 // TODO: Combine the costs of each part of the sandwich to get the subtotal.
-let subtotal = null;
+let subtotal = meatCost + toppingCost + condimentCost + prices.sandwich;
 
 // TODO: Calculate the tax owed using the waStateTaxRate.
 let waStateTaxRate = 0.065;
-let orderTax = null;
+let orderTax = subtotal * waStateTaxRate;
 
 // TODO: Calculate `totalPrice` by adding `subtotal` and `orderTax`.
-let totalPrice = null;
+let totalPrice = subtotal + orderTax;
 
 
 // Step Three //////////////////////////////////////////////////////////
