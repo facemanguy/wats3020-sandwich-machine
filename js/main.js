@@ -79,20 +79,20 @@ let totalPrice = subtotal + orderTax;
 
 let receiptTemplate = `
     <p>SANDWICH ORDER</p>
-    <p>Bread: wheat</p>
-    <p>Meat: ham, turkey</p>
-    <p>Toppings: lettuce, tomato, peppers, spinach</p>
-    <p>Condiments: mayo, mustard, thousand island</p>
+    <p>Bread: ${bread}</p>
+    <p>Meat: ${meat}</p>
+    <p>Toppings: ${toppings}</p>
+    <p>Condiments: ${condiments}</p>
     <p>---------------------</p>
-    <p class="text-right">Sandwich: $4.42</p>
-    <p class="text-right">Meat: $2.00</p>
-    <p class="text-right">Toppings: $2.00</p>
-    <p class="text-right">Condiments: $1.42</p>
+    <p class="text-right">Sandwich: ${prices.sandwich.toFixed(2)}</p>
+    <p class="text-right">Meat: ${meatCost.toFixed(2)}</p>
+    <p class="text-right">Toppings: ${toppingCost.toFixed(2)}</p>
+    <p class="text-right">Condiments: ${condimentCost.toFixed(2)}</p>
     <p class="text-right">--------</p>
-    <p class="text-right">Subtotal: $9.84</p>
-    <p class="text-right">Tax: $1.42</p>
+    <p class="text-right">Subtotal: ${subtotal.toFixed(2)}</p>
+    <p class="text-right">Tax: ${orderTax.toFixed(2)}</p>
     <p class="text-right">--------</p>
-    <p class="text-right">Total: $4.84</p>
+    <p class="text-right">Total: ${totalPrice.toFixed(2)}</p>
 `
 
 ///////////////////////////////////////////////////////////////////////
