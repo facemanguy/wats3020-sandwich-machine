@@ -7,26 +7,27 @@
 // Provide examples where it may help (e.g. show a comma-separated list of
 // toppings to indicate how to specify toppings, etc.)
 //
+prompt("Welcome to our New Automated Sandwich Creator! Please type what you would like in each prompt seperating out items with a comma.")
 // TODO: Prompt the user for what kind of bread they would like.
 // Ideally, that would look something like: "What kind of bread (white, wheat, flat)?"
-
+let bread = prompt("Select a Bread from: (White, Wheat, Multigrain, Flat, or Cheese)");
 
 
 // TODO: Prompt the user for what kind of meat(s) they would like.
 // Indicate they should separate multiple items with a comma:
 // "What kind of meat? (Separate meats with a comma if you would like more than one.)"
-
+let meat = prompt("Select your Meat(s) from: (Ham, Beef, Chicken, Turkey, or Vegan)");
 
 
 // TODO: Prompt the user for what kind of toppings they would like.
 // We expect this to be multiple, so ask them to provide you with a
 // comma-separated list using a user friendly prompt.
-
+let toppings = prompt("Select any toppings or Cheese's you would like: (Swiss, Cheddar, American, Provolone, Feta, Lettuce, Onion, Pickles, Olives, Tomato, Spinach)");
 
 
 // TODO: Prompt the user for what kind of condiments they would like.
 // Again, we should expect a comma-separated list if items here.
-
+let condiments = prompt("Select any Condiments you'd like: (Mayo, Vinegar, Oil, Dressing, HotSauce)");
 
 
 // Step Two ////////////////////////////////////////////////////////////
